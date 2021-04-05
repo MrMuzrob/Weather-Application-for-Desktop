@@ -23,7 +23,7 @@ def getWeather(canvas):
     final_info = condition + "\n" + str(temp) + "°C" 
     final_data = "\n"+ "Temperature: " + str(temp) + "°C" +"\n" + "Pressure: " + str(pressure) + "hPa" + "\n" +"Humidity: " + str(humidity) + "%"+"\n" + "Wind Speed: " + str(wind) + "m/s" "\n"
     now = dt.datetime.now()
-    today = now.strftime("\n""Time: %d/%m/%Y")
+    today = now.strftime("\n""Date: %d/%m/%Y")
     label1.config(text = final_info)
     label2.config(text = final_data)
     label3.config(text = today)
